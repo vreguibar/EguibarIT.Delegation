@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4001CC06-F890-4138-BD73-54696EC56A51}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EguibarIT.Delegation</RootNamespace>
+    <AssemblyName>EguibarIT.Delegation</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <ShouldCreateLogs>True</ShouldCreateLogs>
+    <AdvancedSettingsExpanded>True</AdvancedSettingsExpanded>
+    <UpdateAssemblyVersion>False</UpdateAssemblyVersion>
+    <UpdateAssemblyFileVersion>False</UpdateAssemblyFileVersion>
+    <UpdateAssemblyInfoVersion>False</UpdateAssemblyInfoVersion>
+    <AssemblyInfoVersionSettings>
+    </AssemblyInfoVersionSettings>
+    <UpdatePackageVersion>False</UpdatePackageVersion>
+    <AssemblyInfoVersionType>SettingsVersion</AssemblyInfoVersionType>
+    <InheritWinAppVersionFrom>None</InheritWinAppVersionFrom>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\EguibarIT.Delegation.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\EguibarIT.Delegation.xml</DocumentationFile>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <ShouldCreateLogs>True</ShouldCreateLogs>
+    <AdvancedSettingsExpanded>False</AdvancedSettingsExpanded>
+    <UpdateAssemblyVersion>True</UpdateAssemblyVersion>
+    <UpdateAssemblyFileVersion>True</UpdateAssemblyFileVersion>
+    <UpdateAssemblyInfoVersion>True</UpdateAssemblyInfoVersion>
+    <AssemblyVersionSettings>None.None.Increment.None</AssemblyVersionSettings>
+    <UpdatePackageVersion>False</UpdatePackageVersion>
+    <AssemblyInfoVersionType>SettingsVersion</AssemblyInfoVersionType>
+    <InheritWinAppVersionFrom>None</InheritWinAppVersionFrom>
+    <AssemblyFileVersionSettings>None.None.Increment.None</AssemblyFileVersionSettings>
+    <AssemblyInfoVersionSettings>None.None.Increment.None</AssemblyInfoVersionSettings>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>LOGO_SinFondo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.GroupPolicy.Management, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Microsoft.GroupPolicy.Management.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Management.Automation, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\WindowsPowerShell\3.0\System.Management.Automation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management.Instrumentation" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CMDlets\Computer.cs" />
+    <Compile Include="CMDlets\DHCP.cs" />
+    <Compile Include="Constructors\AclCon5.cs" />
+    <Compile Include="Constructors\AclCon6.cs" />
+    <Compile Include="CMDlets\Contact.cs" />
+    <Compile Include="CMDlets\DFS.cs" />
+    <Compile Include="CMDlets\DirectoryReplication.cs" />
+    <Compile Include="CMDlets\GPO.cs" />
+    <Compile Include="CMDlets\Group.cs" />
+    <Compile Include="CMDlets\Miscellaneous\GetAclAccessRule.cs" />
+    <Compile Include="CMDlets\Miscellaneous\GetGUIDtoName.cs" />
+    <Compile Include="CMDlets\Miscellaneous\GetAttributeSchemaHashTable.cs" />
+    <Compile Include="CMDlets\Miscellaneous\GetClassSchemaHashTable.cs" />
+    <Compile Include="CMDlets\Miscellaneous\GetExtendedRightHashTable.cs" />
+    <Compile Include="CMDlets\InetOrgPerson.cs" />
+    <Compile Include="CMDlets\Miscellaneous\RemoveAccountOperator.cs" />
+    <Compile Include="CMDlets\Miscellaneous\RemoveAuthUser.cs" />
+    <Compile Include="CMDlets\Miscellaneous\RemoveEveryone.cs" />
+    <Compile Include="CMDlets\Miscellaneous\RemovePreWin2000.cs" />
+    <Compile Include="CMDlets\Miscellaneous\RemovePreWin2000FromOU.cs" />
+    <Compile Include="CMDlets\Miscellaneous\RemovePrintOperator.cs" />
+    <Compile Include="CMDlets\Miscellaneous\RemoveSpecificACLandEnableInheritance.cs" />
+    <Compile Include="CMDlets\Miscellaneous\SetAdInheritance.cs" />
+    <Compile Include="CMDlets\Miscellaneous\WellKnownSid.cs" />
+    <Compile Include="CMDlets\ManagedServiceAccount.cs" />
+    <Compile Include="CMDlets\GroupManagedServiceAccount.cs" />
+    <Compile Include="CMDlets\MngPrivilegedAccounts\SetAdAclMngPrivilegedGroups.cs" />
+    <Compile Include="CMDlets\MngPrivilegedAccounts\SetAdAclMngPrivilegedAccounts.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Other\AclAccessRule.cs" />
+    <Compile Include="Other\GUIDs.cs" />
+    <Compile Include="Other\GpoPrivilegeRights.cs" />
+    <Compile Include="CMDlets\Miscellaneous\RemoveUnknownSID.cs" />
+    <Compile Include="Other\IniFile.cs" />
+    <Compile Include="Other\SIDs.cs" />
+    <Compile Include="Other\Other.cs" />
+    <Compile Include="Other\Vars.cs" />
+    <Compile Include="CMDlets\OU.cs" />
+    <Compile Include="CMDlets\PKI\SetAdAclPkiAdmin.cs" />
+    <Compile Include="CMDlets\PKI\SetAdAclPkiTemplateAdmin.cs" />
+    <Compile Include="CMDlets\PrintQueue.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CMDlets\SiteLink.cs" />
+    <Compile Include="CMDlets\Site.cs" />
+    <Compile Include="CMDlets\Subnet.cs" />
+    <Compile Include="CMDlets\User.cs" />
+    <Compile Include="CMDlets\Volume.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LOGO_SinFondo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="EguibarIT.Delegation.psd1" />
+    <None Include="packages.config" />
+    <None Include="PostBuildEvent.ps1" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>if $(ConfigurationName) == Release (
+"C:\Program Files (x86)\Windows Kits\10\bin\10.0.16299.0\x64\signtool.exe" sign /f "$(SolutionDir)CodeSign-2020.pfx" /p "Pizotza 1234" /tr http://tsa.starfieldtech.com /td SHA256 /fd SHA256 "$(TargetPath)"
+
+copy "$(TargetPath)" "$(SolutionDir)Final\EguibarIT.Delegation"
+
+copy "$(TargetDir)EguibarIT.Delegation.dll-Help.xml" "$(SolutionDir)Final\EguibarIT.Delegation"
+
+powershell.exe -NoProfile -ExecutionPolicy ByPass -Command  "&amp; { $DllVersion = (Get-Item -Path '$(TargetPath)').VersionInfo.FileVersion; $RootModule = '.\{0}' -f "'$(TargetFileName)'"; Update-ModuleManifest -Path  '$(ProjectDir)EguibarIT.Delegation.psd1' -ModuleVersion $DllVersion -RootModule $RootModule  -CmdletsToExport '*';  exit $LASTEXITCODE }"
+
+copy "$(ProjectDir)EguibarIT.Delegation.psd1" "$(SolutionDir)Final\EguibarIT.Delegation"
+
+)</PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="..\packages\XmlDoc2CmdletDoc.0.2.13\build\XmlDoc2CmdletDoc.targets" Condition="Exists('..\packages\XmlDoc2CmdletDoc.0.2.13\build\XmlDoc2CmdletDoc.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\XmlDoc2CmdletDoc.0.2.13\build\XmlDoc2CmdletDoc.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\XmlDoc2CmdletDoc.0.2.13\build\XmlDoc2CmdletDoc.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
