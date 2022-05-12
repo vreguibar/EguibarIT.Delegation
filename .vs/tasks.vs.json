@@ -1,0 +1,15 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-EguibarIT",
+      "appliesTo": "/",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "task-slnx",
+      "appliesTo": ".vs/slnx.sqlite",
+      "type": "launch"
+    }
+  ]
+}
