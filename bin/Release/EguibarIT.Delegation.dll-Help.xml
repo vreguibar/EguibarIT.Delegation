@@ -4777,6 +4777,156 @@
       </maml:navigationLink>
     </maml:relatedLinks>
   </command:command>
+  <!-- Cmdlet: Set-AdAclFSMOtransfer -->
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+    <command:details>
+      <command:name>Set-AdAclFSMOtransfer</command:name>
+      <command:verb>Set</command:verb>
+      <command:noun>AdAclFSMOtransfer</command:noun>
+      <maml:description>
+        <maml:para>Delegate the management rights of FMSO roles</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Delegate the right to transfer any of the 5 FMSO roles to a given group</maml:para>
+    </maml:description>
+    <command:syntax>
+      <!-- Parameter set: __AllParameterSets -->
+      <command:syntaxItem>
+        <maml:name>Set-AdAclFSMOtransfer</maml:name>
+        <!-- Parameter: Group -->
+        <command:parameter required="true" globbing="false" pipelineInput="true (ByValue, ByPropertyName)" position="0">
+          <maml:name>Group</maml:name>
+          <maml:description>
+            <maml:para>Identity of the group getting the delegation.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true">string</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+        </command:parameter>
+        <!-- Parameter: FSMOroles -->
+        <command:parameter required="true" globbing="false" pipelineInput="true (ByValue, ByPropertyName)" position="1">
+          <maml:name>FSMOroles</maml:name>
+          <maml:description>
+            <maml:para>Flexible Single Master Operations (FSMO) Roles to delegate.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true">string[]</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String[]</maml:name>
+            <maml:uri />
+          </dev:type>
+        </command:parameter>
+        <!-- Parameter: RemoveRule -->
+        <command:parameter required="false" globbing="false" pipelineInput="true (ByValue, ByPropertyName)" position="2">
+          <maml:name>RemoveRule</maml:name>
+          <maml:description>
+            <maml:para>Switch indicator to remove the access rule</maml:para>
+          </maml:description>
+          <command:parameterValue required="true">SwitchParameter</command:parameterValue>
+          <dev:type>
+            <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <!-- Parameter: Group -->
+      <command:parameter required="true" globbing="false" pipelineInput="true (ByValue, ByPropertyName)" position="0">
+        <maml:name>Group</maml:name>
+        <maml:description>
+          <maml:para>Identity of the group getting the delegation.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true">string</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+          <maml:uri />
+        </dev:type>
+      </command:parameter>
+      <!-- Parameter: FSMOroles -->
+      <command:parameter required="true" globbing="false" pipelineInput="true (ByValue, ByPropertyName)" position="1">
+        <maml:name>FSMOroles</maml:name>
+        <maml:description>
+          <maml:para>Flexible Single Master Operations (FSMO) Roles to delegate.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true">string[]</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String[]</maml:name>
+          <maml:uri />
+        </dev:type>
+      </command:parameter>
+      <!-- Parameter: RemoveRule -->
+      <command:parameter required="false" globbing="false" pipelineInput="true (ByValue, ByPropertyName)" position="2">
+        <maml:name>RemoveRule</maml:name>
+        <maml:description>
+          <maml:para>Switch indicator to remove the access rule</maml:para>
+        </maml:description>
+        <command:parameterValue required="true">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <maml:description>
+          <maml:para>STRING representing the group SamAccountName.</maml:para>
+        </maml:description>
+      </command:inputType>
+      <command:inputType>
+        <dev:type>
+          <maml:name>System.String[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <maml:description>
+          <maml:para>STRING ARRAY representing the each FSMO roles.</maml:para>
+        </maml:description>
+      </command:inputType>
+      <command:inputType>
+        <dev:type>
+          <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <maml:description>
+          <maml:para>SWITCH parameter (true or false). If present the value becomes TRUE, and the access rule will be removed</maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <!-- OutputType: Int32 -->
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.Int32</maml:name>
+          <maml:uri />
+        </dev:type>
+      </command:returnValue>
+    </command:returnValues>
+    <command:examples>
+      <command:example>
+        <maml:title>----------  EXAMPLE 1  ----------</maml:title>
+        <dev:code>Set-AdAclFMSOtransfer -Group "SL_FSMOadmin" -FSMOroles 'Schema', 'Infrastructure', 'DomainNaming', 'RID', 'PDC'</dev:code>
+      </command:example>
+      <command:example>
+        <maml:title>----------  EXAMPLE 2  ----------</maml:title>
+        <dev:code>Set-AdAclFMSOtransfer -Group "SL_FSMOadmin" -FSMOroles 'Schema', 'Infrastructure', 'DomainNaming', 'RID', 'PDC' -RemoveRule</dev:code>
+      </command:example>
+    </command:examples>
+    <maml:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>[Eguibar Information Technology S.L. web site]</maml:linkText>
+        <maml:uri>(http://EguibarIT.eu)</maml:uri>
+      </maml:navigationLink>
+    </maml:relatedLinks>
+  </command:command>
   <!-- Cmdlet: Set-AdAclFullControlDFS -->
   <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
     <command:details>

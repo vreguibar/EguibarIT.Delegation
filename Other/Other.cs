@@ -229,6 +229,49 @@ namespace EguibarIT.Delegation.Other
 
             return ldapRoot.Properties["rootDomainNamingContext"][0].ToString();
         }
+
+        /// <summary>
+        /// Return arrayList of all available Naming Contexts
+        /// </summary>
+        /// <returns>All Naming Contexts</returns>
+        public static PropertyValueCollection getAllNamingContexts()
+        {
+            DirectoryEntry ldapRoot = new DirectoryEntry(string.Format("LDAP://{0}/rootDSE", EguibarIT.Delegation.Other.Domains.GetAdFQDN()));
+
+            return ldapRoot.Properties["namingContexts"];
+        }
+
+        /// <summary>
+        /// Returs the Forest Partitions Container
+        /// </summary>
+        /// <returns>Forest Partitions Container</returns>
+        public static string GetForestPartitionsContainer()
+        {
+            return string.Format("CN=Partitions,{0}", EguibarIT.Delegation.Other.Domains.GetConfigurationNamingContext());
+        }
+
+        /// <summary>
+        /// Get Partitions Container from Configuration
+        /// </summary>
+        /// <returns></returns>
+        public static SearchResultCollection GetPartitionsReplicaLocations()
+        {
+            // Bind to the RootDSE to get the configurationNamingContext property.
+            DirectoryEntry RootDSE = new DirectoryEntry("LDAP://RootDSE");
+            DirectoryEntry ConfigContainer = new DirectoryEntry("LDAP://CN=Partitions," + RootDSE.Properties["configurationNamingContext"].Value);
+
+            // Search for an object that is of type crossRefContainer.
+            DirectorySearcher ConfigSearcher = new DirectorySearcher(ConfigContainer);
+            ConfigSearcher.Filter = "(&(objectClass=crossRef))";
+            ConfigSearcher.PropertiesToLoad.Add("name");
+            ConfigSearcher.PropertiesToLoad.Add("nCName");
+            ConfigSearcher.PropertiesToLoad.Add("msDS-NC-Replica-Locations");
+            ConfigSearcher.SearchScope = SearchScope.OneLevel;
+
+            SearchResultCollection result = ConfigSearcher.FindAll();
+
+            return result;
+        }
     }
 
     /// <summary>

@@ -1,0 +1,82 @@
+E:\EguibarIT.Delegation\EguibarIT.Delegation\bin\Debug\EguibarIT.Delegation.XML
+E:\EguibarIT.Delegation\EguibarIT.Delegation\bin\Debug\EguibarIT.Delegation.dll
+E:\EguibarIT.Delegation\EguibarIT.Delegation\bin\Debug\EguibarIT.Delegation.pdb
+E:\EguibarIT.Delegation\EguibarIT.Delegation\bin\Debug\System.Management.Automation.dll
+E:\EguibarIT.Delegation\EguibarIT.Delegation\obj\Debug\EguibarIT.Delegation.dll
+E:\EguibarIT.Delegation\EguibarIT.Delegation\obj\Debug\EguibarIT.Delegation.pdb
+E:\EguibarIT.Delegation\EguibarIT.Delegation\bin\Debug\INIFileParser.dll
+E:\EguibarIT.Delegation\EguibarIT.Delegation\bin\Debug\Microsoft.GroupPolicy.Management.dll
+E:\EguibarIT.Delegation\EguibarIT.Delegation\obj\Debug\EguibarIT.Delegation.csprojResolveAssemblyReference.cache
+E:\EguibarIT.Delegation\EguibarIT.Delegation\bin\Debug\INIFileParser.pdb
+E:\Users\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT.Delegation\EguibarIT.Delegation\bin\Debug\EguibarIT.Delegation.XML
+E:\Users\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT.Delegation\EguibarIT.Delegation\bin\Debug\EguibarIT.Delegation.dll
+E:\Users\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT.Delegation\EguibarIT.Delegation\bin\Debug\EguibarIT.Delegation.pdb
+E:\Users\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT.Delegation\EguibarIT.Delegation\bin\Debug\INIFileParser.dll
+E:\Users\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT.Delegation\EguibarIT.Delegation\bin\Debug\Microsoft.GroupPolicy.Management.dll
+E:\Users\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT.Delegation\EguibarIT.Delegation\bin\Debug\System.Management.Automation.dll
+E:\Users\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT.Delegation\EguibarIT.Delegation\bin\Debug\INIFileParser.pdb
+E:\Users\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT.Delegation\EguibarIT.Delegation\obj\Debug\EguibarIT.Delegation.csprojResolveAssemblyReference.cache
+E:\Users\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT.Delegation\EguibarIT.Delegation\obj\Debug\EguibarIT.Delegation.dll
+E:\Users\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT.Delegation\EguibarIT.Delegation\obj\Debug\EguibarIT.Delegation.pdb
+C:\Users\TheGood\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT.Delegation\EguibarIT.Delegation\bin\Debug\EguibarIT.Delegation.XML
+C:\Users\TheGood\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT.Delegation\EguibarIT.Delegation\bin\Debug\EguibarIT.Delegation.dll
+C:\Users\TheGood\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT.Delegation\EguibarIT.Delegation\bin\Debug\EguibarIT.Delegation.pdb
+C:\Users\TheGood\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT.Delegation\EguibarIT.Delegation\bin\Debug\INIFileParser.dll
+C:\Users\TheGood\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT.Delegation\EguibarIT.Delegation\bin\Debug\Microsoft.GroupPolicy.Management.dll
+C:\Users\TheGood\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT.Delegation\EguibarIT.Delegation\bin\Debug\System.Management.Automation.dll
+C:\Users\TheGood\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT.Delegation\EguibarIT.Delegation\bin\Debug\INIFileParser.pdb
+C:\Users\TheGood\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT.Delegation\EguibarIT.Delegation\obj\Debug\EguibarIT.Delegation.dll
+C:\Users\TheGood\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT.Delegation\EguibarIT.Delegation\obj\Debug\EguibarIT.Delegation.pdb
+C:\Users\TheGood\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT.Delegation\EguibarIT.Delegation\obj\Debug\EguibarIT.Delegation.csprojResolveAssemblyReference.cache
+C:\Users\TheGood\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT.Delegation\EguibarIT.Delegation\bin\Debug\EguibarIT.Delegation.dll.config
+C:\Users\TheGood\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\bin\Debug\EguibarIT.Delegation.dll.config
+C:\Users\TheGood\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\bin\Debug\EguibarIT.Delegation.XML
+C:\Users\TheGood\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\bin\Debug\EguibarIT.Delegation.dll
+C:\Users\TheGood\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\bin\Debug\EguibarIT.Delegation.pdb
+C:\Users\TheGood\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\bin\Debug\INIFileParser.dll
+C:\Users\TheGood\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\bin\Debug\Microsoft.GroupPolicy.Management.dll
+C:\Users\TheGood\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\bin\Debug\System.Management.Automation.dll
+C:\Users\TheGood\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\bin\Debug\INIFileParser.pdb
+C:\Users\TheGood\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\obj\Debug\EguibarIT.Delegation.dll
+C:\Users\TheGood\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\obj\Debug\EguibarIT.Delegation.pdb
+C:\Users\TheGood\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\obj\Debug\EguibarIT.Delegation.csprojResolveAssemblyReference.cache
+E:\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\bin\Debug\EguibarIT.Delegation.dll.config
+E:\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\bin\Debug\EguibarIT.Delegation.XML
+E:\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\bin\Debug\EguibarIT.Delegation.dll
+E:\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\bin\Debug\EguibarIT.Delegation.pdb
+E:\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\bin\Debug\Microsoft.Win32.TaskScheduler.dll
+E:\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\bin\Debug\System.Management.Automation.dll
+E:\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\bin\Debug\Microsoft.Win32.TaskScheduler.xml
+E:\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\obj\Debug\EguibarIT.Delegation.csproj.CoreCompileInputs.cache
+E:\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\obj\Debug\EguibarIT.Delegation.csproj.CopyComplete
+E:\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\obj\Debug\EguibarIT.Delegation.dll
+E:\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\obj\Debug\EguibarIT.Delegation.pdb
+E:\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\obj\Debug\EguibarIT.Delegation.csprojAssemblyReference.cache
+G:\OneDrive - Eguibar Information Technology SL\OneDrive - Eguibar Information Technology S.L\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\bin\Debug\EguibarIT.Delegation.dll.config
+G:\OneDrive - Eguibar Information Technology SL\OneDrive - Eguibar Information Technology S.L\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\bin\Debug\EguibarIT.Delegation.XML
+G:\OneDrive - Eguibar Information Technology SL\OneDrive - Eguibar Information Technology S.L\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\bin\Debug\EguibarIT.Delegation.dll
+G:\OneDrive - Eguibar Information Technology SL\OneDrive - Eguibar Information Technology S.L\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\bin\Debug\EguibarIT.Delegation.pdb
+G:\OneDrive - Eguibar Information Technology SL\OneDrive - Eguibar Information Technology S.L\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\bin\Debug\System.Management.Automation.dll
+G:\OneDrive - Eguibar Information Technology SL\OneDrive - Eguibar Information Technology S.L\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\obj\Debug\EguibarIT.Delegation.csproj.CoreCompileInputs.cache
+G:\OneDrive - Eguibar Information Technology SL\OneDrive - Eguibar Information Technology S.L\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\obj\Debug\EguibarIT.Delegation.csproj.CopyComplete
+G:\OneDrive - Eguibar Information Technology SL\OneDrive - Eguibar Information Technology S.L\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\obj\Debug\EguibarIT.Delegation.dll
+G:\OneDrive - Eguibar Information Technology SL\OneDrive - Eguibar Information Technology S.L\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\obj\Debug\EguibarIT.Delegation.pdb
+E:\OneDrive - Eguibar Information Technology S.L\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\bin\Debug\EguibarIT.Delegation.dll.config
+E:\OneDrive - Eguibar Information Technology S.L\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\bin\Debug\EguibarIT.Delegation.XML
+E:\OneDrive - Eguibar Information Technology S.L\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\bin\Debug\EguibarIT.Delegation.dll
+E:\OneDrive - Eguibar Information Technology S.L\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\bin\Debug\EguibarIT.Delegation.pdb
+E:\OneDrive - Eguibar Information Technology S.L\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\bin\Debug\System.Management.Automation.dll
+E:\OneDrive - Eguibar Information Technology S.L\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\obj\Debug\EguibarIT.Delegation.csproj.CopyComplete
+E:\OneDrive - Eguibar Information Technology S.L\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\obj\Debug\EguibarIT.Delegation.dll
+E:\OneDrive - Eguibar Information Technology S.L\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\obj\Debug\EguibarIT.Delegation.pdb
+E:\OneDrive - Eguibar Information Technology S.L\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\obj\Debug\EguibarIT.Delegation.csprojAssemblyReference.cache
+E:\OneDrive\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\bin\Debug\EguibarIT.Delegation.dll.config
+E:\OneDrive\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\bin\Debug\EguibarIT.Delegation.XML
+E:\OneDrive\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\bin\Debug\EguibarIT.Delegation.dll
+E:\OneDrive\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\bin\Debug\EguibarIT.Delegation.pdb
+E:\OneDrive\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\bin\Debug\System.Management.Automation.dll
+E:\OneDrive\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\obj\Debug\EguibarIT.Delegation.csproj.AssemblyReference.cache
+E:\OneDrive\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\obj\Debug\EguibarIT.Delegation.csproj.CoreCompileInputs.cache
+E:\OneDrive\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\obj\Debug\EguibarIT.Delegation.csproj.CopyComplete
+E:\OneDrive\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\obj\Debug\EguibarIT.Delegation.dll
+E:\OneDrive\OneDrive - EguibarIT\_Scripts\ApSrv\EguibarIT\EguibarIT.Delegation\obj\Debug\EguibarIT.Delegation.pdb
