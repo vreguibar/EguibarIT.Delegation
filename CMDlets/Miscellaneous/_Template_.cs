@@ -1,4 +1,5 @@
-﻿using System.DirectoryServices;
+﻿using System;
+using System.DirectoryServices;
 using System.Management.Automation;
 using System.Security.AccessControl;
 
@@ -15,7 +16,7 @@ namespace EguibarIT.Delegation.CMDlets
     /// <para type="link" uri="(http://EguibarIT.eu)">[Eguibar Information Technology S.L. web site]</para>
     [Cmdlet(VerbsCommon.Set, "AdAclXxxxx", ConfirmImpact = ConfirmImpact.Medium)]
     [OutputType(typeof(int))]
-    public class Xxxxx : Cmdlet
+    public class Xxxxx : PSCmdlet
     {
 
         #region Parameters definition
@@ -88,6 +89,28 @@ namespace EguibarIT.Delegation.CMDlets
         protected override void BeginProcessing()
         {
             base.BeginProcessing();
+
+            if (this.MyInvocation.BoundParameters.ContainsKey("Verbose"))
+            {
+                WriteVerbose("|=> ************************************************************************ <=|");
+                WriteVerbose(DateTime.Today.ToShortDateString());
+                WriteVerbose(string.Format("  Starting: {0}", this.MyInvocation.MyCommand));
+
+                string paramVerbose;
+                paramVerbose = "Parameters:\n";
+                paramVerbose += string.Format("{0,-12}{1,-30}{2,-30}\n", null, " Key", " Value");
+                paramVerbose += string.Format("{0,-12}{1,-30}{2,-30}\n", null, "----------", "----------");
+
+                // display PSBoundparameters formatted nicely for Verbose output
+                // var is iDictionary
+                var pb = this.MyInvocation.BoundParameters; // | Format - Table - AutoSize | Out - String).TrimEnd()
+
+                foreach (var item in pb)
+                {
+                    paramVerbose += string.Format("{0,-12}{1,-30}{2,-30}\n", null, item.Key, item.Value);
+                }
+                WriteVerbose(string.Format("{0}\n", paramVerbose));
+            }
         }
         #endregion Begin()
 
@@ -112,7 +135,14 @@ namespace EguibarIT.Delegation.CMDlets
         /// </summary>
         protected override void EndProcessing()
         {
+            if (this.MyInvocation.BoundParameters.ContainsKey("Verbose"))
+            {
+                string paramVerboseEnd;
+                paramVerboseEnd = string.Format("\n         Function {0} finished.\n", this.MyInvocation.MyCommand);
+                paramVerboseEnd += "-------------------------------------------------------------------------------\n\n";
 
+                WriteVerbose(paramVerboseEnd);
+            }
         }
         #endregion End()
 

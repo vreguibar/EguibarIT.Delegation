@@ -55,6 +55,8 @@
     <InheritWinAppVersionFrom>None</InheritWinAppVersionFrom>
     <AssemblyFileVersionSettings>None.None.Increment.None</AssemblyFileVersionSettings>
     <AssemblyInfoVersionSettings>None.None.Increment.None</AssemblyInfoVersionSettings>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisIgnoreGeneratedCode>true</CodeAnalysisIgnoreGeneratedCode>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>LOGO_SinFondo.ico</ApplicationIcon>
@@ -91,15 +93,71 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CMDlets\Computer.cs" />
+    <Compile Include="CMDlets\AdTopology\SiteChange.cs" />
+    <Compile Include="CMDlets\AdTopology\SiteLinkChange.cs" />
+    <Compile Include="CMDlets\AdTopology\SubnetChange.cs" />
+    <Compile Include="CMDlets\Computer\AdmPwdComputerSelfPermission.cs" />
+    <Compile Include="CMDlets\Computer\AdmPwdReadPasswordPermission.cs" />
+    <Compile Include="CMDlets\Computer\AdmPwdResetPasswordPermission.cs" />
+    <Compile Include="CMDlets\Computer\BitlocketTPM.cs" />
+    <Compile Include="CMDlets\Computer\ChangeComputerPassword.cs" />
+    <Compile Include="CMDlets\Computer\ComputerAccountRestrictions.cs" />
+    <Compile Include="CMDlets\Computer\ComputerGroupMembership.cs" />
+    <Compile Include="CMDlets\Computer\ComputerPersonalInfo.cs" />
+    <Compile Include="CMDlets\Computer\ComputerPublicInfo.cs" />
+    <Compile Include="CMDlets\Computer\CreateDeleteComputer.cs" />
+    <Compile Include="CMDlets\Computer\DeleteOnlyComputer.cs" />
+    <Compile Include="CMDlets\Computer\DnsInfo.cs" />
+    <Compile Include="CMDlets\Computer\DomainJoinComputer.cs" />
+    <Compile Include="CMDlets\Computer\EnableDisableComputer.cs" />
+    <Compile Include="CMDlets\Computer\MsTsGatewayInfo.cs" />
+    <Compile Include="CMDlets\Computer\RenameComputer.cs" />
+    <Compile Include="CMDlets\Computer\ResetComputerPassword.cs" />
+    <Compile Include="CMDlets\Computer\ValidateWriteDnsHostname.cs" />
+    <Compile Include="CMDlets\Computer\ValidateWriteSPN.cs" />
+    <Compile Include="CMDlets\Contact\ContactPersonalInfo.cs" />
+    <Compile Include="CMDlets\Contact\ContactWebInfo.cs" />
+    <Compile Include="CMDlets\Contact\CreateDeleteContact.cs" />
     <Compile Include="CMDlets\DHCP.cs" />
+    <Compile Include="CMDlets\FSMOtransfer.cs" />
+    <Compile Include="CMDlets\GPO\CreateDeleteGPO.cs" />
+    <Compile Include="CMDlets\GPO\GpoPrivilegeRights.cs" />
+    <Compile Include="CMDlets\GPO\GPoption.cs" />
+    <Compile Include="CMDlets\GPO\GpoRestrictedGroups.cs" />
+    <Compile Include="CMDlets\GPO\LinkGPO.cs" />
+    <Compile Include="CMDlets\GPO\RSoPLogging.cs" />
+    <Compile Include="CMDlets\GPO\RSoPPlanning.cs" />
+    <Compile Include="CMDlets\Group\ChangeGroup.cs" />
+    <Compile Include="CMDlets\Group\CreateDeleteGroup.cs" />
+    <Compile Include="CMDlets\Group\GroupMembership.cs" />
+    <Compile Include="CMDlets\Group\RenameGroup.cs" />
+    <Compile Include="CMDlets\OU\ChangeOU.cs" />
+    <Compile Include="CMDlets\OU\CreateDeleteOU.cs" />
+    <Compile Include="CMDlets\OU\RenameOU.cs" />
+    <Compile Include="CMDlets\PrintQueue\ChangePrintQueue.cs" />
+    <Compile Include="CMDlets\PrintQueue\CreateDeletePrintQueue.cs" />
+    <Compile Include="CMDlets\PrintQueue\RenamePrintQueue.cs" />
+    <Compile Include="CMDlets\User\ChangeUserPassword.cs" />
+    <Compile Include="CMDlets\User\CreateDeleteUser.cs" />
+    <Compile Include="CMDlets\User\EnableDisableUser.cs" />
+    <Compile Include="CMDlets\User\RenameUser.cs" />
+    <Compile Include="CMDlets\User\ResetUserPassword.cs" />
+    <Compile Include="CMDlets\User\UnlockUser.cs" />
+    <Compile Include="CMDlets\User\UserAccountRestrictions.cs" />
+    <Compile Include="CMDlets\User\UserEmailInfo.cs" />
+    <Compile Include="CMDlets\User\UserGeneralInfo.cs" />
+    <Compile Include="CMDlets\User\UserGroupMembership.cs" />
+    <Compile Include="CMDlets\User\UserLogonInfo.cs" />
+    <Compile Include="CMDlets\User\UserPersonalInfo.cs" />
+    <Compile Include="CMDlets\User\UserPublicInfo.cs" />
+    <Compile Include="CMDlets\User\UserWebInfo.cs" />
+    <Compile Include="CMDlets\Volume\ChangeVolume.cs" />
+    <Compile Include="CMDlets\Volume\CreateDeleteVolume.cs" />
+    <Compile Include="Constructors\AclCon4.cs" />
     <Compile Include="Constructors\AclCon5.cs" />
     <Compile Include="Constructors\AclCon6.cs" />
-    <Compile Include="CMDlets\Contact.cs" />
     <Compile Include="CMDlets\DFS.cs" />
     <Compile Include="CMDlets\DirectoryReplication.cs" />
-    <Compile Include="CMDlets\GPO.cs" />
-    <Compile Include="CMDlets\Group.cs" />
     <Compile Include="CMDlets\Miscellaneous\GetAclAccessRule.cs" />
     <Compile Include="CMDlets\Miscellaneous\GetGUIDtoName.cs" />
     <Compile Include="CMDlets\Miscellaneous\GetAttributeSchemaHashTable.cs" />
@@ -117,8 +175,8 @@
     <Compile Include="CMDlets\Miscellaneous\WellKnownSid.cs" />
     <Compile Include="CMDlets\ManagedServiceAccount.cs" />
     <Compile Include="CMDlets\GroupManagedServiceAccount.cs" />
-    <Compile Include="CMDlets\MngPrivilegedAccounts\SetAdAclMngPrivilegedGroups.cs" />
-    <Compile Include="CMDlets\MngPrivilegedAccounts\SetAdAclMngPrivilegedAccounts.cs" />
+    <Compile Include="CMDlets\MngPrivilegedAccount\SetAdAclMngPrivilegedGroups.cs" />
+    <Compile Include="CMDlets\MngPrivilegedAccount\SetAdAclMngPrivilegedAccounts.cs" />
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Other\AclAccessRule.cs" />
     <Compile Include="Other\GUIDs.cs" />
@@ -128,16 +186,12 @@
     <Compile Include="Other\SIDs.cs" />
     <Compile Include="Other\Other.cs" />
     <Compile Include="Other\Vars.cs" />
-    <Compile Include="CMDlets\OU.cs" />
     <Compile Include="CMDlets\PKI\SetAdAclPkiAdmin.cs" />
     <Compile Include="CMDlets\PKI\SetAdAclPkiTemplateAdmin.cs" />
-    <Compile Include="CMDlets\PrintQueue.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="CMDlets\SiteLink.cs" />
-    <Compile Include="CMDlets\Site.cs" />
-    <Compile Include="CMDlets\Subnet.cs" />
-    <Compile Include="CMDlets\User.cs" />
-    <Compile Include="CMDlets\Volume.cs" />
+    <Compile Include="CMDlets\AdTopology\SiteLinkCreateDelete.cs" />
+    <Compile Include="CMDlets\AdTopology\SiteCreateDelete.cs" />
+    <Compile Include="CMDlets\AdTopology\SubnetCreateDelete.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="LOGO_SinFondo.ico" />
@@ -148,6 +202,7 @@
     <None Include="packages.config" />
     <None Include="PostBuildEvent.ps1" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>if $(ConfigurationName) == Release (

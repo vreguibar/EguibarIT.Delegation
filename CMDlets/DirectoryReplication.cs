@@ -111,245 +111,285 @@ namespace EguibarIT.Delegation.CMDlets
         {
             base.ProcessRecord();
 
-            // Integer to catch contructor results
-            int valueFromConstructor = 0;
+            // Get all Naming Contexts
+            PropertyValueCollection AllContexts = EguibarIT.Delegation.Other.Domains.getAllNamingContexts();
 
             /*
-
+                Iterate through each existing Naming Context
+                and delegate:
+                + Monitor Active Directory Replication
+                + Replicating Directory Changes
+                + Replicating Directory Changes All
+                + Replicating Directory Changes In Filtered Set
+                + Manage Replication Topology
+                + Replication Synchronization
              */
-
-            #region Configuration Naming Context delegation
-
-            // ACE number: 1
-            if (
-                EguibarIT.Delegation.Constructors.AclCon5.AclConstructor5(
-                    EguibarIT.Delegation.Other.Domains.GetConfigurationNamingContext(),
-                    _group,
-                    ActiveDirectoryRights.ExtendedRight,
-                    AccessControlType.Allow,
-                    EguibarIT.Delegation.GUIDs.ConvertNameToSchemaGUID("Manage Replication Topology"),
-                    ActiveDirectorySecurityInheritance.All,
-                    _removerule
-                ))
+            foreach (var item in AllContexts)
             {
-                valueFromConstructor++;
+                ////////////////////////////////////////////////
+                // Monitor Active Directory Replication
+                /*
+                      ACENumber              : 
+                            DistinguishedName: Current Naming Context
+                      IdentityReference      : EguibarIT\SL_DirReplRight
+                      ActiveDirectoryRightst : ExtendedRight
+                      AccessControlType      : Allow
+                      ObjectType             : Monitor Active Directory Replication[Extended Rights]
+                              InheritanceType: None
+                      InheritedObjectType    : GuidNULL
+                      IsInherited            : False
+                */
+                if (
+                   EguibarIT.Delegation.Constructors.AclCon4.AclConstructor4(
+                       item.ToString(),
+                       _group,
+                       ActiveDirectoryRights.ExtendedRight,
+                       AccessControlType.Allow,
+                       EguibarIT.Delegation.GUIDs.ConvertNameToSchemaGUID("Monitor Active Directory Replication"),
+                       _removerule
+               ))
+                {
+                    if (_removerule)
+                    {
+                        WriteVerbose(String.Format("\"Monitor Active Directory Replication\" was revoked from {0} naming context.", item.ToString()));
+                    } 
+                    else
+                    {
+                        WriteVerbose(String.Format("Delegate \"Monitor Active Directory Replication\" completed succesfully on {0} naming context.", item.ToString()));
+                    }
+                    
+                } 
+                else
+                {
+                    WriteWarning(String.Format("Something went wrong when delegating \"Monitor Active Directory Replicationon\" {0} naming context.", item.ToString()));
+                }
+
+                ////////////////////////////////////////////////
+                // Replicating Directory Changes
+                /*
+                    ACENumber              : 
+                            DistinguishedName: Current Naming Context
+                      IdentityReference      : EguibarIT\SL_DirReplRight
+                      ActiveDirectoryRightst : ExtendedRight
+                      AccessControlType      : Allow
+                      ObjectType             : Replicating Directory Changes[Extended Rights]
+                              InheritanceType: None
+                      InheritedObjectType    : GuidNULL
+                      IsInherited            : False
+                */
+                if (
+                   EguibarIT.Delegation.Constructors.AclCon4.AclConstructor4(
+                       item.ToString(),
+                       _group,
+                       ActiveDirectoryRights.ExtendedRight,
+                       AccessControlType.Allow,
+                       EguibarIT.Delegation.GUIDs.ConvertNameToSchemaGUID("Replicating Directory Changes"),
+                       _removerule
+               ))
+                {
+                    WriteVerbose(String.Format("Delegate \"Replicating Directory Changes\" completed succesfully on {0} naming context.", item.ToString()));
+                }
+                else
+                {
+                    WriteWarning(String.Format("Something went wrong when delegating \"Replicating Directory Changes\" {0} naming context.", item.ToString()));
+                }
+
+                ////////////////////////////////////////////////
+                // Replicating Directory Changes All
+                /*
+                      ACENumber              : 
+                            DistinguishedName: Current Naming Context
+                      IdentityReference      : EguibarIT\SL_DirReplRight
+                      ActiveDirectoryRightst : ExtendedRight
+                      AccessControlType      : Allow
+                      ObjectType             : Replicating Directory Changes All[Extended Rights]
+                              InheritanceType: None
+                      InheritedObjectType    : GuidNULL
+                      IsInherited            : False
+                */
+                if (
+                   EguibarIT.Delegation.Constructors.AclCon4.AclConstructor4(
+                       item.ToString(),
+                       _group,
+                       ActiveDirectoryRights.ExtendedRight,
+                       AccessControlType.Allow,
+                       EguibarIT.Delegation.GUIDs.ConvertNameToSchemaGUID("Replicating Directory Changes All"),
+                       _removerule
+               ))
+                {
+                    WriteVerbose(String.Format("Delegate \"Replicating Directory Changes All\" completed succesfully on {0} naming context.", item.ToString()));
+                }
+                else
+                {
+                    WriteWarning(String.Format("Something went wrong when delegating \"Replicating Directory Changes All\" {0} naming context.", item.ToString()));
+                }
+
+                ////////////////////////////////////////////////
+                // Replicating Directory Changes In Filtered Set
+                /*
+                      ACENumber              : 
+                            DistinguishedName: Current Naming Context
+                      IdentityReference      : EguibarIT\SL_DirReplRight
+                      ActiveDirectoryRightst : ExtendedRight
+                      AccessControlType      : Allow
+                      ObjectType             : Replicating Directory Changes In Filtered Set[Extended Rights]
+                              InheritanceType: None
+                      InheritedObjectType    : GuidNULL
+                      IsInherited            : False
+                */
+                if (
+                   EguibarIT.Delegation.Constructors.AclCon4.AclConstructor4(
+                       item.ToString(),
+                       _group,
+                       ActiveDirectoryRights.ExtendedRight,
+                       AccessControlType.Allow,
+                       EguibarIT.Delegation.GUIDs.ConvertNameToSchemaGUID("Replicating Directory Changes In Filtered Set"),
+                       _removerule
+               ))
+                {
+                    WriteVerbose(String.Format("Delegate \"Replicating Directory Changes In Filtered Set\" completed succesfully on {0} naming context.", item.ToString()));
+                }
+                else
+                {
+                    WriteWarning(String.Format("Something went wrong when delegating \"Replicating Directory Changes In Filtered Set\" {0} naming context.", item.ToString()));
+                }
+
+                ////////////////////////////////////////////////
+                // Manage Replication Topology
+                /*
+                      ACENumber              : 
+                            DistinguishedName: Current Naming Context
+                      IdentityReference      : EguibarIT\SL_DirReplRight
+                      ActiveDirectoryRightst : ExtendedRight
+                      AccessControlType      : Allow
+                      ObjectType             : Manage Replication Topology[Extended Rights]
+                              InheritanceType: None
+                      InheritedObjectType    : GuidNULL
+                      IsInherited            : False
+                */
+                if (
+                   EguibarIT.Delegation.Constructors.AclCon4.AclConstructor4(
+                       item.ToString(),
+                       _group,
+                       ActiveDirectoryRights.ExtendedRight,
+                       AccessControlType.Allow,
+                       EguibarIT.Delegation.GUIDs.ConvertNameToSchemaGUID("Manage Replication Topology"),
+                       _removerule
+               ))
+                {
+                    WriteVerbose(String.Format("Delegate \"Manage Replication Topology\" completed succesfully on {0} naming context.", item.ToString()));
+                }
+                else
+                {
+                    WriteWarning(String.Format("Something went wrong when delegating \"Manage Replication Topology\" {0} naming context.", item.ToString()));
+                }
+
+                ////////////////////////////////////////////////
+                // Replication Synchronization
+                /*
+                      ACENumber              : 
+                            DistinguishedName: Current Naming Context
+                      IdentityReference      : EguibarIT\SL_DirReplRight
+                      ActiveDirectoryRightst : ExtendedRight
+                      AccessControlType      : Allow
+                      ObjectType             : Replication Synchronization[Extended Rights]
+                              InheritanceType: All
+                      InheritedObjectType    : GuidNULL
+                      IsInherited            : False
+                */
+                if (
+                   EguibarIT.Delegation.Constructors.AclCon4.AclConstructor4(
+                       item.ToString(),
+                       _group,
+                       ActiveDirectoryRights.ExtendedRight,
+                       AccessControlType.Allow,
+                       EguibarIT.Delegation.GUIDs.ConvertNameToSchemaGUID("Replication Synchronization"),
+                       _removerule
+               ))
+                {
+                    WriteVerbose(String.Format("Delegate \"Replication Synchronization\" on {0} naming context.", item.ToString()));
+                }
+                else
+                {
+                    WriteWarning(String.Format("Something went wrong when delegating \"Replication Synchronization\" {0} naming context.", item.ToString()));
+                }
+
+            } //end Foreach
+
+            // Get Forest Partition Container
+            SearchResultCollection partitions = EguibarIT.Delegation.Other.Domains.GetPartitionsReplicaLocations();
+
+            string CurrentConfigurationNamingContext = EguibarIT.Delegation.Other.Domains.GetConfigurationNamingContext();
+
+            //Iterate through all partitions found
+            foreach (SearchResult part in partitions)
+            {
+                // if Replica-Locations is populated
+                if (part.Properties["msDS-NC-Replica-Locations"].Count > 0)
+                {
+                    var NameProperty = part.Properties["name"];
+                    string GuidNameString = NameProperty[0].ToString();
+
+                    ////////////////////////////////////////////////
+                    // Partition Replica Locations
+                    /*
+                          ACENumber              : 1
+                                DistinguishedName: CN=2bdcf0cf-6755-4d80-a0a6-2977da70d57f,CN=Partitions,CN=Configuration,DC=EguibarIT,DC=local
+                          IdentityReference      : EguibarIT\SL_DirReplRight
+                          ActiveDirectoryRightst : ReadProperty
+                          AccessControlType      : Allow
+                          ObjectType             : msDS-NC-Replica-Locations[Extended Rights]
+                                  InheritanceType: None
+                          InheritedObjectType    : GuidNULL
+                          IsInherited            : False
+                    */
+                    if (
+                       EguibarIT.Delegation.Constructors.AclCon4.AclConstructor4(
+                           String.Format("CN={0},CN=Partitions,{1}", GuidNameString, CurrentConfigurationNamingContext),
+                           _group,
+                           ActiveDirectoryRights.ReadProperty,
+                           AccessControlType.Allow,
+                           EguibarIT.Delegation.GUIDs.ConvertNameToSchemaGUID("msDS-NC-Replica-Locations"),
+                           _removerule
+                   ))
+                    {
+                        WriteVerbose(String.Format("Delegate \"Read Property msDS-NC-Replica-Locations\" completed succesfully on {0} naming context.", String.Format("CN={0},CN=Partitions,{1}", GuidNameString, CurrentConfigurationNamingContext)));
+                    }
+                    else
+                    {
+                        WriteWarning(String.Format("Something went wrong when delegating \"Read Property msDS-NC-Replica-Locations\" {0} naming context.", String.Format("CN={0},CN=Partitions,{1}", GuidNameString, CurrentConfigurationNamingContext)));
+                    }
+
+                    /*
+                          ACENumber              : 1
+                                DistinguishedName: CN=2bdcf0cf-6755-4d80-a0a6-2977da70d57f,CN=Partitions,CN=Configuration,DC=EguibarIT,DC=local
+                          IdentityReference      : EguibarIT\SL_DirReplRight
+                          ActiveDirectoryRightst : ReadProperty
+                          AccessControlType      : Allow
+                          ObjectType             : msDS-NC-Replica-Locations[Extended Rights]
+                                  InheritanceType: None
+                          InheritedObjectType    : GuidNULL
+                          IsInherited            : False
+                    */
+                    if (
+                       EguibarIT.Delegation.Constructors.AclCon4.AclConstructor4(
+                           String.Format("CN={0},CN=Partitions,{1}", GuidNameString, CurrentConfigurationNamingContext),
+                           _group,
+                           ActiveDirectoryRights.WriteProperty,
+                           AccessControlType.Allow,
+                           EguibarIT.Delegation.GUIDs.ConvertNameToSchemaGUID("msDS-NC-Replica-Locations"),
+                           _removerule
+                   ))
+                    {
+                        WriteVerbose(String.Format("Delegate \"Write Property msDS-NC-Replica-Locations\" completed succesfully on {0} naming context.", String.Format("CN={0},CN=Partitions,{1}", GuidNameString, CurrentConfigurationNamingContext)));
+                    }
+                    else
+                    {
+                        WriteWarning(String.Format("Something went wrong when delegating \"Write Property msDS-NC-Replica-Locations\" {0} naming context.", String.Format("CN={0},CN=Partitions,{1}", GuidNameString, CurrentConfigurationNamingContext)));
+                    }
+                }
             }
 
-            // ACE number: 2
-            if (
-                EguibarIT.Delegation.Constructors.AclCon5.AclConstructor5(
-                    EguibarIT.Delegation.Other.Domains.GetConfigurationNamingContext(),
-                    _group,
-                    ActiveDirectoryRights.ExtendedRight,
-                    AccessControlType.Allow,
-                    EguibarIT.Delegation.GUIDs.ConvertNameToSchemaGUID("Replicating Directory Changes"),
-                    ActiveDirectorySecurityInheritance.All,
-                    _removerule
-                ))
-            {
-                valueFromConstructor++;
-            }
-
-            // ACE number: 3
-            if (
-                EguibarIT.Delegation.Constructors.AclCon5.AclConstructor5(
-                    EguibarIT.Delegation.Other.Domains.GetConfigurationNamingContext(),
-                    _group,
-                    ActiveDirectoryRights.ExtendedRight,
-                    AccessControlType.Allow,
-                    EguibarIT.Delegation.GUIDs.ConvertNameToSchemaGUID("Replicating Directory Changes All"),
-                    ActiveDirectorySecurityInheritance.All,
-                    _removerule
-                ))
-            {
-                valueFromConstructor++;
-            }
-
-            // ACE number: 4
-            if (
-                EguibarIT.Delegation.Constructors.AclCon5.AclConstructor5(
-                    EguibarIT.Delegation.Other.Domains.GetConfigurationNamingContext(),
-                    _group,
-                    ActiveDirectoryRights.ExtendedRight,
-                    AccessControlType.Allow,
-                    EguibarIT.Delegation.GUIDs.ConvertNameToSchemaGUID("Replication Synchronization"),
-                    ActiveDirectorySecurityInheritance.All,
-                    _removerule
-                ))
-            {
-                valueFromConstructor++;
-            }
-
-            // ACE number: 5
-            if (
-                EguibarIT.Delegation.Constructors.AclCon5.AclConstructor5(
-                    EguibarIT.Delegation.Other.Domains.GetConfigurationNamingContext(),
-                    _group,
-                    ActiveDirectoryRights.ExtendedRight,
-                    AccessControlType.Allow,
-                    EguibarIT.Delegation.GUIDs.ConvertNameToSchemaGUID("Monitor active directory Replication"),
-                    ActiveDirectorySecurityInheritance.All,
-                    _removerule
-                ))
-            {
-                valueFromConstructor++;
-            }
-
-            // ACE number:
-            if (
-                EguibarIT.Delegation.Constructors.AclCon5.AclConstructor5(
-                    EguibarIT.Delegation.Other.Domains.GetConfigurationNamingContext(),
-                    _group,
-                    ActiveDirectoryRights.ExtendedRight,
-                    AccessControlType.Allow,
-                    EguibarIT.Delegation.GUIDs.ConvertNameToSchemaGUID("Replicating Directory Changes In Filtered Set"),
-                    ActiveDirectorySecurityInheritance.All,
-                    _removerule
-                ))
-            {
-                valueFromConstructor++;
-            }
-
-            #endregion Configuration Naming Context delegation
-
-            #region Schema Naming Context delegation
-
-            // ACE number: 6
-            if (
-                EguibarIT.Delegation.Constructors.AclCon5.AclConstructor5(
-                    EguibarIT.Delegation.Other.Domains.GetschemaNamingContext(),
-                    _group,
-                    ActiveDirectoryRights.ExtendedRight,
-                    AccessControlType.Allow,
-                    EguibarIT.Delegation.GUIDs.ConvertNameToSchemaGUID("Manage Replication Topology"),
-                    ActiveDirectorySecurityInheritance.All,
-                    _removerule
-                ))
-            {
-                valueFromConstructor++;
-            }
-
-            // ACE number: 7
-            if (
-                EguibarIT.Delegation.Constructors.AclCon5.AclConstructor5(
-                    EguibarIT.Delegation.Other.Domains.GetschemaNamingContext(),
-                    _group,
-                    ActiveDirectoryRights.ExtendedRight,
-                    AccessControlType.Allow,
-                    EguibarIT.Delegation.GUIDs.ConvertNameToSchemaGUID("Replicating Directory Changes"),
-                    ActiveDirectorySecurityInheritance.All,
-                    _removerule
-                ))
-            {
-                valueFromConstructor++;
-            }
-
-            // ACE number: 8
-            if (
-                EguibarIT.Delegation.Constructors.AclCon5.AclConstructor5(
-                    EguibarIT.Delegation.Other.Domains.GetschemaNamingContext(),
-                    _group,
-                    ActiveDirectoryRights.ExtendedRight,
-                    AccessControlType.Allow,
-                    EguibarIT.Delegation.GUIDs.ConvertNameToSchemaGUID("Replicating Directory Changes All"),
-                    ActiveDirectorySecurityInheritance.All,
-                    _removerule
-                ))
-            {
-                valueFromConstructor++;
-            }
-
-            // ACE number: 9
-            if (
-                EguibarIT.Delegation.Constructors.AclCon5.AclConstructor5(
-                    EguibarIT.Delegation.Other.Domains.GetschemaNamingContext(),
-                    _group,
-                    ActiveDirectoryRights.ExtendedRight,
-                    AccessControlType.Allow,
-                    EguibarIT.Delegation.GUIDs.ConvertNameToSchemaGUID("Replication Synchronization"),
-                    ActiveDirectorySecurityInheritance.All,
-                    _removerule
-                ))
-            {
-                valueFromConstructor++;
-            }
-
-            #endregion Schema Naming Context delegation
-
-            #region Forest DNS Zones Naming Context delegation
-
-            // ACE number: 10
-            if (
-                EguibarIT.Delegation.Constructors.AclCon5.AclConstructor5(
-                    string.Format("DC=ForestDnsZones,{0}", EguibarIT.Delegation.Other.Domains.GetrootDomainNamingContext()),
-                    _group,
-                    ActiveDirectoryRights.ExtendedRight,
-                    AccessControlType.Allow,
-                    EguibarIT.Delegation.GUIDs.ConvertNameToSchemaGUID("Manage Replication Topology"),
-                    ActiveDirectorySecurityInheritance.All,
-                    _removerule
-                ))
-            {
-                valueFromConstructor++;
-            }
-
-            // ACE number: 11
-            if (
-                EguibarIT.Delegation.Constructors.AclCon5.AclConstructor5(
-                    string.Format("DC=ForestDnsZones,{0}", EguibarIT.Delegation.Other.Domains.GetrootDomainNamingContext()),
-                    _group,
-                    ActiveDirectoryRights.ExtendedRight,
-                    AccessControlType.Allow,
-                    EguibarIT.Delegation.GUIDs.ConvertNameToSchemaGUID("Replicating Directory Changes"),
-                    ActiveDirectorySecurityInheritance.All,
-                    _removerule
-                ))
-            {
-                valueFromConstructor++;
-            }
-
-            // ACE number: 12
-            if (
-                EguibarIT.Delegation.Constructors.AclCon5.AclConstructor5(
-                    string.Format("DC=ForestDnsZones,{0}", EguibarIT.Delegation.Other.Domains.GetrootDomainNamingContext()),
-                    _group,
-                    ActiveDirectoryRights.ExtendedRight,
-                    AccessControlType.Allow,
-                    EguibarIT.Delegation.GUIDs.ConvertNameToSchemaGUID("Replicating Directory Changes All"),
-                    ActiveDirectorySecurityInheritance.All,
-                    _removerule
-                ))
-            {
-                valueFromConstructor++;
-            }
-
-            // ACE number: 13
-            if (
-                EguibarIT.Delegation.Constructors.AclCon5.AclConstructor5(
-                    string.Format("DC=ForestDnsZones,{0}", EguibarIT.Delegation.Other.Domains.GetrootDomainNamingContext()),
-                    _group,
-                    ActiveDirectoryRights.ExtendedRight,
-                    AccessControlType.Allow,
-                    EguibarIT.Delegation.GUIDs.ConvertNameToSchemaGUID("Replication Synchronization"),
-                    ActiveDirectorySecurityInheritance.All,
-                    _removerule
-                ))
-            {
-                valueFromConstructor++;
-            }
-
-            #endregion Forest DNS Zones Naming Context delegation
-
-            //Check if everithing went OK. One point for each constructor returning TRUE
-            if (valueFromConstructor == 13)
-            {
-                WriteVerbose("Delegate Directory Replication Rights completed succesfully.");
-            }
-
-            if (valueFromConstructor != 13)
-            {
-                WriteWarning("Something went wrong when delegating Directory Replication Rights ");
-            }
         }
 
         #endregion Process()

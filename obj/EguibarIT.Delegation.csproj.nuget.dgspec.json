@@ -1,0 +1,50 @@
+{
+  "format": 1,
+  "restore": {
+    "G:\\OneDrive - Eguibar Information Technology SL\\OneDrive - Eguibar Information Technology S.L\\_Scripts\\ApSrv\\EguibarIT\\EguibarIT.Delegation\\EguibarIT.Delegation.csproj": {}
+  },
+  "projects": {
+    "G:\\OneDrive - Eguibar Information Technology SL\\OneDrive - Eguibar Information Technology S.L\\_Scripts\\ApSrv\\EguibarIT\\EguibarIT.Delegation\\EguibarIT.Delegation.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\OneDrive - Eguibar Information Technology SL\\OneDrive - Eguibar Information Technology S.L\\_Scripts\\ApSrv\\EguibarIT\\EguibarIT.Delegation\\EguibarIT.Delegation.csproj",
+        "projectName": "EguibarIT.Delegation",
+        "projectPath": "G:\\OneDrive - Eguibar Information Technology SL\\OneDrive - Eguibar Information Technology S.L\\_Scripts\\ApSrv\\EguibarIT\\EguibarIT.Delegation\\EguibarIT.Delegation.csproj",
+        "packagesPath": "C:\\Users\\TheUgly\\.nuget\\packages\\",
+        "outputPath": "G:\\OneDrive - Eguibar Information Technology SL\\OneDrive - Eguibar Information Technology S.L\\_Scripts\\ApSrv\\EguibarIT\\EguibarIT.Delegation\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\TheUgly\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
